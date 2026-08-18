@@ -1,0 +1,1 @@
+export { TrainFullInformationCard } from './TrainFullInformationCard'

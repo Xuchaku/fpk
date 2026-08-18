@@ -1,21 +1,18 @@
-# React + TypeScript + Vite + shadcn/ui
+# React + TypeScript + Vite + shadcn/ui + React Router
 
-This is a template for a new Vite project with React, TypeScript, and shadcn/ui.
+Установка и запуск
 
-## Adding components
+git clone https://github.com/Xuchaku/fpk.git
+cd ./fpk
+npm i
+npm run dev
+http://localhost:5173/
 
-To add components to your app, run the following command:
+# Фукнционал
 
-```bash
-npx shadcn@latest add button
-```
-
-This will place the ui components in the `src/components` directory.
-
-## Using components
-
-To use the components in your app, import them as follows:
-
-```tsx
-import { Button } from "@/components/ui/button"
-```
+Карточки с информацией отображаются подряд. Есть фильтрация по карточкам. Клик на карточку переносит на :id карточки, где отображается вся информация
+Было принято реализовавывать карточки с контентом в виде compound components, это добавило декларативности, чистоты кода, легкости расширения.
+React router используется для навигация по карточкам, что является удобным решением.
+Shadcn ui используется в качестве базы для ui.
+Улучшил бы я точно следующие моменты: context я бы заменил на микро-сторы например Mobx или Effector. И добавил бы transitions на появляение и скрытие карточек во время фильтрации.
+Также бы я точно вынес бы фильтрацию как query-params в url, чтобы можно было скопировать ссылку и отправить с уже примененными фильтрами.
