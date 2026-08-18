@@ -1,12 +1,14 @@
 # React + TypeScript + Vite + shadcn/ui + React Router
 
+- Vercel: https://fpk-mocha.vercel.app/
+
 Установка и запуск
 
-git clone https://github.com/Xuchaku/fpk.git
-cd ./fpk
-npm i
-npm run dev
-http://localhost:5173/
+- git clone https://github.com/Xuchaku/fpk.git
+- cd ./fpk
+- npm i
+- npm run dev
+- http://localhost:5173/
 
 # Фукнционал
 
